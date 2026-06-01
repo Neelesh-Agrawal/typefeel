@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/api/typefeel", "destination": "/api/typefeel.js" },
+    { "source": "/", "destination": "/index.html" }
+  ]
+}
