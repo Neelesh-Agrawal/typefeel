@@ -13,7 +13,7 @@ Interactive typography playground with AI analysis. Pick a font, type anything, 
 ## Stack
 - Vanilla HTML/CSS/JS
 - Vercel serverless function
-- Groq API (llama-3.3-70b-versatile)
+- Groq API (openai/gpt-oss-120b)
 - Google Fonts
 
 ## Deploy to Vercel
