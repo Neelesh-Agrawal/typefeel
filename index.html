@@ -519,7 +519,22 @@
       .controls { border-right: none; border-bottom: 1px solid var(--border); }
       .analysis-panel { border-left: none; border-top: 1px solid var(--border); }
     }
-  </style>
+  
+    /* Phones: preview first, fonts as a swipeable row */
+    @media (max-width: 900px) {
+      .app { display: flex; flex-direction: column; }
+      .canvas-wrap { order: -1; min-height: 52vh; border-bottom: 1px solid var(--border); }
+      .controls { order: 0; }
+      .controls, .canvas-wrap, .analysis-panel { min-width: 0; max-width: 100vw; }
+      .font-grid { display: flex; flex-direction: row; flex-wrap: nowrap; overflow-x: auto; max-width: 100%; gap: 6px; padding-bottom: 6px; scrollbar-width: none; }
+      nav { padding: 0.75rem 1rem; }
+      .canvas-toolbar { flex-wrap: wrap; row-gap: 6px; }
+      .analyse-btn { white-space: nowrap; }
+      .font-grid::-webkit-scrollbar { display: none; }
+      .font-grid > * { flex: 0 0 auto; white-space: nowrap; }
+      .analysis-panel { order: 1; }
+    }
+</style>
 </head>
 <body>
 
